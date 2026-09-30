@@ -1,0 +1,10 @@
+{
+  "project": "P605 - PJM Hourly Energy Consumption Forecasting",
+  "production_model": "Seasonal Naive (24h)",
+  "model_family": "Classical Time-Series",
+  "forecast_horizon_hours": 720,
+  "forecast_horizon_days": 30,
+  "training_window_hours": 2160,
+  "seasonal_period_hours": 24,
+  "selection_rule": "Lowest MAE among classical time-series models on chronological validation"
+}

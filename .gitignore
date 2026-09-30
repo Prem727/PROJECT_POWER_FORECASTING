@@ -1,29 +1,31 @@
-# Python cache files
-__pycache__/
-*.pyc
-*.pyo
-
-# Virtual environment
+# Python virtual environment
 venv/
 .venv/
 env/
 
-# VS Code settings
-.vscode/
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Jupyter Notebook temporary files
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Operating system files
+# Streamlit
+.streamlit/secrets.toml
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# Python environment files
+# IDE files
+.vscode/
+.idea/
+
+# Python packaging
 *.egg-info/
+dist/
+build/
 
-# Temporary files
-*.tmp
-*.temp
-
-# Large trained model
-pjm_energy_forecasting_model.pkl
+# Logs
+*.log

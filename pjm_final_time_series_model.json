@@ -1,0 +1,5 @@
+{
+  "model": "Seasonal Naive (24h)",
+  "seasonal_period_hours": 24,
+  "description": "Forecast uses the value from the same hour on the previous day."
+}

@@ -1,0 +1,12 @@
+Model,Period,MAE,RMSE,MAPE (%),Family,Selection
+Seasonal Naive (24h),30-day validation,429.025,536.0506350461059,7.454927322442799,Classical Time-Series,Eligible for production
+Holt-Winters,30-day validation,495.94584228731685,647.3978290528723,8.821207226292332,Classical Time-Series,Eligible for production
+"ARIMA(2,1,2)",30-day validation,920.5376869721857,1083.1322672330693,16.56339979019991,Classical Time-Series,Eligible for production
+"SARIMA(1,1,1)x(1,1,1,24)",30-day validation,947.7006861822518,1169.2234341319145,17.562861383704504,Classical Time-Series,Eligible for production
+LSTM,30-day validation,1092.2695637897898,1372.026294502815,17.10607871366279,Deep Learning,Benchmark only
+Linear Regression,Final last-year test,128.34579322860054,164.0125887288403,2.2147946184832112,Machine Learning / PCA,Benchmark only
+Decision Tree,Final last-year test,75.20782875600993,101.23649174810677,1.3105937352541355,Machine Learning / PCA,Benchmark only
+Random Forest,Final last-year test,80.16796342376614,108.73751380756848,1.3701129590632855,Machine Learning / PCA,Benchmark only
+Gradient Boosting,Final last-year test,75.03758897018868,96.57792248780245,1.3121451594394007,Machine Learning / PCA,Benchmark only
+XGBoost,Final last-year test,54.477294921875,74.11085578585974,0.9397972325051258,Machine Learning / PCA,Benchmark only
+PCA + Linear Regression,Final last-year test,219.93699097702174,282.19892634289874,3.853111719752738,Machine Learning / PCA,Benchmark only

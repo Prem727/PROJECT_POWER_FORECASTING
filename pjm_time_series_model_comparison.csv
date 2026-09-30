@@ -1,0 +1,5 @@
+Model,Period,MAE,RMSE,MAPE (%),Family,Selection
+Seasonal Naive (24h),30-day validation,429.025,536.0506350461059,7.454927322442799,Classical Time-Series,Eligible for production
+Holt-Winters,30-day validation,495.94584228731685,647.3978290528723,8.821207226292332,Classical Time-Series,Eligible for production
+"ARIMA(2,1,2)",30-day validation,920.5376869721857,1083.1322672330693,16.56339979019991,Classical Time-Series,Eligible for production
+"SARIMA(1,1,1)x(1,1,1,24)",30-day validation,947.7006861822518,1169.2234341319145,17.562861383704504,Classical Time-Series,Eligible for production
