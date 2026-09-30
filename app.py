@@ -5,7 +5,6 @@ import plotly.graph_objects as go
 import json
 from pathlib import Path
 
-
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -17,13 +16,11 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
 # ============================================================
 # PROJECT PATH
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent
-
 
 # ============================================================
 # PROFESSIONAL LIGHT DASHBOARD STYLE
@@ -40,7 +37,6 @@ st.markdown("""
     background: #f3f6fa;
     color: #172033;
 }
-
 
 /* =========================================================
    STREAMLIT TOP HEADER
@@ -63,7 +59,6 @@ header[data-testid="stHeader"] {
     background: #f3f6fa !important;
 }
 
-
 /* =========================================================
    MAIN CONTENT
    ========================================================= */
@@ -73,7 +68,6 @@ header[data-testid="stHeader"] {
     padding-bottom: 3rem;
     max-width: 1500px;
 }
-
 
 /* =========================================================
    GLOBAL TEXT
@@ -100,7 +94,6 @@ label {
     color: #475569;
 }
 
-
 /* =========================================================
    MAIN TITLE
    ========================================================= */
@@ -118,7 +111,6 @@ label {
     font-size: 17px;
     margin-bottom: 28px;
 }
-
 
 /* =========================================================
    SIDEBAR
@@ -148,13 +140,9 @@ section[data-testid="stSidebar"] .stRadio label:hover {
     color: #ffffff !important;
 }
 
-
-/* Sidebar caption */
-
 section[data-testid="stSidebar"] .stCaption {
     color: #94a3b8 !important;
 }
-
 
 /* =========================================================
    HEADERS
@@ -174,59 +162,39 @@ h3 {
     margin-top: 20px !important;
 }
 
-
 /* =========================================================
    KPI CARDS
    ========================================================= */
 
 .metric-card {
     background: #ffffff;
-
     border: 1px solid #dbe3ee;
-
     border-radius: 16px;
-
     padding: 20px 22px;
-
     min-height: 118px;
-
-    box-shadow:
-        0 4px 14px rgba(15, 23, 42, 0.07);
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .metric-card:hover {
     transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 22px rgba(15, 23, 42, 0.12);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
 }
 
 .metric-title {
     color: #64748b !important;
-
     font-size: 13px;
-
     font-weight: 650;
-
     text-transform: uppercase;
-
     letter-spacing: 0.5px;
 }
 
 .metric-value {
     color: #172033 !important;
-
     font-size: 28px;
-
     font-weight: 850;
-
     margin-top: 10px;
 }
-
 
 /* =========================================================
    INFO BOX
@@ -234,23 +202,14 @@ h3 {
 
 .info-box {
     background: #ffffff;
-
     border: 1px solid #dbe3ee;
-
     border-left: 4px solid #2563eb;
-
     border-radius: 12px;
-
     padding: 18px 20px;
-
     color: #475569 !important;
-
     margin: 12px 0 24px 0;
-
-    box-shadow:
-        0 4px 14px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
 }
-
 
 /* =========================================================
    FINDING CARDS
@@ -258,26 +217,18 @@ h3 {
 
 .finding-box {
     background: #ffffff;
-
     border: 1px solid #dbe3ee;
-
     border-radius: 13px;
-
     padding: 17px 20px;
-
     margin-bottom: 13px;
-
     color: #475569 !important;
-
-    box-shadow:
-        0 4px 14px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
 }
 
 .finding-box strong {
     color: #172033 !important;
     font-size: 16px;
 }
-
 
 /* =========================================================
    SECTION NOTE
@@ -289,7 +240,6 @@ h3 {
     margin-bottom: 20px;
 }
 
-
 /* =========================================================
    DATAFRAME
    ========================================================= */
@@ -300,43 +250,34 @@ div[data-testid="stDataFrame"] {
     overflow: hidden;
 }
 
-
 /* =========================================================
    DOWNLOAD BUTTON
    ========================================================= */
 
 .stDownloadButton button {
-    background:
-        linear-gradient(
-            135deg,
-            #2563eb,
-            #1d4ed8
-        ) !important;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    ) !important;
 
     color: #ffffff !important;
-
     border: none !important;
-
     border-radius: 9px !important;
-
     font-weight: 650 !important;
-
     padding: 10px 18px !important;
-
     transition: all 0.2s ease;
 }
 
 .stDownloadButton button:hover {
-    background:
-        linear-gradient(
-            135deg,
-            #3b82f6,
-            #2563eb
-        ) !important;
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    ) !important;
 
     transform: translateY(-1px);
 }
-
 
 /* =========================================================
    SELECTBOX
@@ -348,7 +289,6 @@ div[data-baseweb="select"] > div {
     color: #172033 !important;
 }
 
-
 /* =========================================================
    RADIO BUTTONS
    ========================================================= */
@@ -356,7 +296,6 @@ div[data-baseweb="select"] > div {
 div[role="radiogroup"] label {
     color: #475569 !important;
 }
-
 
 /* =========================================================
    ALERTS
@@ -366,7 +305,6 @@ div[data-testid="stAlert"] {
     border-radius: 10px;
 }
 
-
 /* =========================================================
    DIVIDERS
    ========================================================= */
@@ -375,21 +313,16 @@ hr {
     border-color: #dbe3ee !important;
 }
 
-
 /* =========================================================
    CHART CONTAINER
    ========================================================= */
 
 .chart-container {
     background: #ffffff;
-
     border: 1px solid #dbe3ee;
-
     border-radius: 14px;
-
     padding: 8px;
 }
-
 
 /* =========================================================
    SCROLLBAR
@@ -412,7 +345,6 @@ hr {
     background: #94a3b8;
 }
 
-
 /* =========================================================
    MOBILE
    ========================================================= */
@@ -434,7 +366,6 @@ hr {
 
 </style>
 """, unsafe_allow_html=True)
-
 
 # ============================================================
 # HELPERS
@@ -585,6 +516,26 @@ rolling_validation = load_csv(
     "pjm_final_year_rolling_validation.csv"
 )
 
+# ============================================================
+# XGBOOST BENCHMARK ARTIFACTS
+# ============================================================
+
+xgb_validation = load_csv(
+    "pjm_xgboost_validation_predictions.csv"
+)
+
+xgb_forecast_hourly = load_csv(
+    "pjm_xgboost_30_day_hourly_forecast.csv"
+)
+
+xgb_forecast_daily = load_csv(
+    "pjm_xgboost_30_day_daily_forecast.csv"
+)
+
+xgb_feature_importance = load_csv(
+    "pjm_xgboost_feature_importance.csv"
+)
+
 metadata = load_json(
     "pjm_forecasting_metadata.json"
 )
@@ -592,7 +543,6 @@ metadata = load_json(
 model_info = load_json(
     "pjm_final_time_series_model.json"
 )
-
 
 # ============================================================
 # DATE PREPARATION
@@ -602,7 +552,10 @@ for df in [
     clean_data,
     forecast_hourly,
     forecast_daily,
-    history
+    history,
+    xgb_validation,
+    xgb_forecast_hourly,
+    xgb_forecast_daily
 ]:
 
     if df is not None and "Datetime" in df.columns:
@@ -610,7 +563,6 @@ for df in [
         df["Datetime"] = pd.to_datetime(
             df["Datetime"]
         )
-
 
 # ============================================================
 # FEATURE ENGINEERING
@@ -676,7 +628,6 @@ if clean_data is not None:
         .mean()
     )
 
-
 # ============================================================
 # SIDEBAR NAVIGATION
 # ============================================================
@@ -716,7 +667,6 @@ st.sidebar.success(
     "Seasonal Naive (24h)"
 )
 
-
 # ============================================================
 # HEADER
 # ============================================================
@@ -738,7 +688,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # ============================================================
 # EXECUTIVE OVERVIEW
 # ============================================================
@@ -754,8 +703,8 @@ if page == "🏠 Executive Overview":
         <div class="info-box">
         This dashboard combines historical PJM electricity demand
         analysis, exploratory data analysis, classical time-series
-        model evaluation, validation results and the final
-        30-day production forecast.
+        model evaluation, machine-learning benchmarking, validation
+        results and the final 30-day production forecast.
         </div>
         """,
         unsafe_allow_html=True
@@ -813,7 +762,6 @@ if page == "🏠 Executive Overview":
                 f"{len(clean_data):,}"
             )
 
-
         # ----------------------------------------------------
         # PROJECT INFORMATION
         # ----------------------------------------------------
@@ -855,7 +803,6 @@ if page == "🏠 Executive Overview":
                 "Forecast Hours",
                 "720"
             )
-
 
         # ----------------------------------------------------
         # PRODUCTION MODEL
@@ -919,7 +866,6 @@ if page == "🏠 Executive Overview":
             unsafe_allow_html=True
         )
 
-
         # ----------------------------------------------------
         # HISTORICAL DEMAND
         # ----------------------------------------------------
@@ -969,7 +915,6 @@ if page == "🏠 Executive Overview":
             use_container_width=True
         )
 
-
 # ============================================================
 # EDA & GRAPHS
 # ============================================================
@@ -995,7 +940,6 @@ elif page == "📊 EDA & Graphs":
         '</div>',
         unsafe_allow_html=True
     )
-
 
     # --------------------------------------------------------
     # HISTORICAL TREND
@@ -1030,7 +974,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # HOURLY PATTERN
@@ -1072,7 +1015,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # DAY OF WEEK
@@ -1125,7 +1067,6 @@ elif page == "📊 EDA & Graphs":
         use_container_width=True
     )
 
-
     # --------------------------------------------------------
     # WEEKDAY VS WEEKEND
     # --------------------------------------------------------
@@ -1165,7 +1106,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # MONTHLY
@@ -1228,7 +1168,6 @@ elif page == "📊 EDA & Graphs":
         use_container_width=True
     )
 
-
     # --------------------------------------------------------
     # YEARLY
     # --------------------------------------------------------
@@ -1269,7 +1208,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # SEASONAL
@@ -1318,7 +1256,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # SEASON BY HOUR
@@ -1369,7 +1306,6 @@ elif page == "📊 EDA & Graphs":
         use_container_width=True
     )
 
-
     # --------------------------------------------------------
     # DISTRIBUTION
     # --------------------------------------------------------
@@ -1402,7 +1338,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # ROLLING 24 HOURS
@@ -1441,7 +1376,6 @@ elif page == "📊 EDA & Graphs":
         fig,
         use_container_width=True
     )
-
 
     # --------------------------------------------------------
     # HOLIDAY ANALYSIS IF AVAILABLE
@@ -1507,7 +1441,6 @@ elif page == "📊 EDA & Graphs":
             use_container_width=True
         )
 
-
 # ============================================================
 # 30-DAY FORECAST
 # ============================================================
@@ -1544,7 +1477,6 @@ elif page == "📈 30-Day Forecast":
             ].idxmax()
         ]
 
-
         # ----------------------------------------------------
         # FORECAST KPI
         # ----------------------------------------------------
@@ -1580,7 +1512,6 @@ elif page == "📈 30-Day Forecast":
                     "%d %b %H:%M"
                 )
             )
-
 
         # ----------------------------------------------------
         # HOURLY FORECAST
@@ -1622,7 +1553,6 @@ elif page == "📈 30-Day Forecast":
             fig,
             use_container_width=True
         )
-
 
         # ----------------------------------------------------
         # HISTORICAL + FUTURE
@@ -1676,7 +1606,6 @@ elif page == "📈 30-Day Forecast":
                 use_container_width=True
             )
 
-
         # ----------------------------------------------------
         # DAILY FORECAST
         # ----------------------------------------------------
@@ -1704,7 +1633,6 @@ elif page == "📈 30-Day Forecast":
                 "text/csv"
             )
 
-
 # ============================================================
 # MODEL COMPARISON
 # ============================================================
@@ -1717,42 +1645,47 @@ elif page == "🤖 Model Comparison":
 
     st.markdown(
         """
-        The project evaluates multiple approaches, while the
-        final production selection is restricted to classical
-        time-series models.
+        Multiple forecasting approaches were evaluated.
+        XGBoost is included as a machine-learning benchmark,
+        while Seasonal Naive (24h) remains the documented
+        production model because production selection is
+        restricted to classical time-series models.
         """
     )
 
-
     # --------------------------------------------------------
-    # CLASSICAL TIME SERIES
+    # ALL MODELS
     # --------------------------------------------------------
 
-    if model_comparison is not None:
+    if all_models is not None:
 
         st.subheader(
-            "Classical Time-Series Models"
+            "Complete Model Comparison"
         )
 
         st.dataframe(
-            model_comparison,
+            all_models,
             use_container_width=True
         )
 
-        if "MAE" in model_comparison.columns:
+        if "MAE" in all_models.columns:
+
+            comparison_plot = all_models.copy()
+
+            comparison_plot = (
+                comparison_plot
+                .drop_duplicates(
+                    subset=["Model"],
+                    keep="first"
+                )
+            )
 
             fig = go.Figure()
 
             fig.add_trace(
                 go.Bar(
-                    x=model_comparison[
-                        "Model"
-                    ],
-
-                    y=model_comparison[
-                        "MAE"
-                    ],
-
+                    x=comparison_plot["Model"],
+                    y=comparison_plot["MAE"],
                     name="MAE"
                 )
             )
@@ -1763,8 +1696,9 @@ elif page == "🤖 Model Comparison":
             )
 
             fig.update_layout(
+                title="Model Comparison by MAE",
                 xaxis_title="Model",
-                yaxis_title="MAE"
+                yaxis_title="MAE (MW)"
             )
 
             st.plotly_chart(
@@ -1772,22 +1706,141 @@ elif page == "🤖 Model Comparison":
                 use_container_width=True
             )
 
+    # --------------------------------------------------------
+    # XGBOOST BENCHMARK
+    # --------------------------------------------------------
+
+    st.subheader(
+        "XGBoost Benchmark"
+    )
+
+    c1, c2, c3 = st.columns(3)
+
+    with c1:
+
+        metric_card(
+            "XGBoost MAE",
+            "72.60 MW"
+        )
+
+    with c2:
+
+        metric_card(
+            "XGBoost RMSE",
+            "119.68 MW"
+        )
+
+    with c3:
+
+        metric_card(
+            "XGBoost MAPE",
+            "1.27%"
+        )
+
+    st.markdown(
+        """
+        <div class="info-box">
+
+        <strong style="color:#172033;">
+        XGBoost Role:
+        </strong>
+
+        Machine-learning benchmark used for comparison.
+        It is not the production model.
+
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     # --------------------------------------------------------
-    # ALL MODELS
+    # XGBOOST FEATURE IMPORTANCE
     # --------------------------------------------------------
 
-    if all_models is not None:
+    if xgb_feature_importance is not None:
 
         st.subheader(
-            "All Evaluated Models"
+            "XGBoost Feature Importance"
         )
 
         st.dataframe(
-            all_models,
+            xgb_feature_importance,
             use_container_width=True
         )
 
+        importance_columns = (
+            xgb_feature_importance.columns
+        )
+
+        if len(importance_columns) >= 2:
+
+            feature_col = importance_columns[0]
+
+            importance_col = importance_columns[1]
+
+            fig = go.Figure()
+
+            fig.add_trace(
+                go.Bar(
+                    x=xgb_feature_importance[
+                        importance_col
+                    ],
+
+                    y=xgb_feature_importance[
+                        feature_col
+                    ],
+
+                    orientation="h",
+
+                    name="Feature Importance"
+                )
+            )
+
+            fig = dark_layout(
+                fig,
+                550
+            )
+
+            fig.update_layout(
+                title="XGBoost Feature Importance",
+                xaxis_title="Importance",
+                yaxis_title="Feature"
+            )
+
+            st.plotly_chart(
+                fig,
+                use_container_width=True
+            )
+
+    # --------------------------------------------------------
+    # PRODUCTION MODEL
+    # --------------------------------------------------------
+
+    st.subheader(
+        "Production Model"
+    )
+
+    st.markdown(
+        """
+        <div class="info-box">
+
+        <strong style="color:#172033;">
+        Seasonal Naive (24h)
+        </strong>
+
+        <br><br>
+
+        This is the selected production model.
+
+        <br><br>
+
+        XGBoost is retained as a machine-learning benchmark
+        and is not used as the documented production model.
+
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 # ============================================================
 # VALIDATION & ERRORS
@@ -1863,6 +1916,126 @@ elif page == "📉 Validation & Errors":
                 use_container_width=True
             )
 
+    # --------------------------------------------------------
+    # XGBOOST VALIDATION
+    # --------------------------------------------------------
+
+    st.subheader(
+        "XGBoost Benchmark Validation"
+    )
+
+    c1, c2, c3 = st.columns(3)
+
+    with c1:
+
+        metric_card(
+            "MAE",
+            "72.60 MW"
+        )
+
+    with c2:
+
+        metric_card(
+            "RMSE",
+            "119.68 MW"
+        )
+
+    with c3:
+
+        metric_card(
+            "MAPE",
+            "1.27%"
+        )
+
+    st.markdown(
+        """
+        <div class="info-box">
+
+        XGBoost validation uses chronological historical data
+        and is included as a machine-learning benchmark.
+        The documented production model remains
+        Seasonal Naive (24h).
+
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    if xgb_validation is not None:
+
+        st.subheader(
+            "XGBoost Validation Predictions"
+        )
+
+        st.dataframe(
+            xgb_validation.head(1000),
+            use_container_width=True
+        )
+
+        if (
+            "Datetime" in xgb_validation.columns
+            and len(xgb_validation.columns) >= 3
+        ):
+
+            actual_candidates = [
+                c for c in xgb_validation.columns
+                if c.lower() in [
+                    "actual",
+                    "actual_mw",
+                    "pjmw_mw"
+                ]
+            ]
+
+            prediction_candidates = [
+                c for c in xgb_validation.columns
+                if c.lower() in [
+                    "predicted",
+                    "predicted_mw",
+                    "prediction"
+                ]
+            ]
+
+            if actual_candidates and prediction_candidates:
+
+                actual_col = actual_candidates[0]
+
+                prediction_col = prediction_candidates[0]
+
+                fig = go.Figure()
+
+                fig.add_trace(
+                    go.Scatter(
+                        x=xgb_validation["Datetime"],
+                        y=xgb_validation[actual_col],
+                        mode="lines",
+                        name="Actual"
+                    )
+                )
+
+                fig.add_trace(
+                    go.Scatter(
+                        x=xgb_validation["Datetime"],
+                        y=xgb_validation[prediction_col],
+                        mode="lines",
+                        name="XGBoost Predicted"
+                    )
+                )
+
+                fig = dark_layout(
+                    fig,
+                    500
+                )
+
+                fig.update_layout(
+                    title="XGBoost Actual vs Predicted",
+                    xaxis_title="Datetime",
+                    yaxis_title="Demand (MW)"
+                )
+
+                st.plotly_chart(
+                    fig,
+                    use_container_width=True
+                )
 
 # ============================================================
 # FINDINGS & INSIGHTS
@@ -1892,7 +2065,6 @@ elif page == "🔍 Findings & Insights":
             ].idxmin()
         ]
 
-
         # ----------------------------------------------------
         # HOURLY
         # ----------------------------------------------------
@@ -1921,7 +2093,6 @@ elif page == "🔍 Findings & Insights":
             hourly_avg.min()
         )
 
-
         # ----------------------------------------------------
         # WEEKDAY / WEEKEND
         # ----------------------------------------------------
@@ -1942,7 +2113,6 @@ elif page == "🔍 Findings & Insights":
             ]["PJMW_MW"].mean()
         )
 
-
         # ----------------------------------------------------
         # MONTH
         # ----------------------------------------------------
@@ -1951,8 +2121,7 @@ elif page == "🔍 Findings & Insights":
             clean_data
             .groupby("Month")[
                 "PJMW_MW"
-            ]
-            .mean()
+            ].mean()
         )
 
         highest_month = (
@@ -1963,7 +2132,6 @@ elif page == "🔍 Findings & Insights":
             monthly_avg.idxmin()
         )
 
-
         # ----------------------------------------------------
         # YEAR
         # ----------------------------------------------------
@@ -1972,8 +2140,7 @@ elif page == "🔍 Findings & Insights":
             clean_data
             .groupby("Year")[
                 "PJMW_MW"
-            ]
-            .mean()
+            ].mean()
         )
 
         highest_year = (
@@ -1984,7 +2151,6 @@ elif page == "🔍 Findings & Insights":
             yearly_avg.idxmin()
         )
 
-
         # ----------------------------------------------------
         # SEASON
         # ----------------------------------------------------
@@ -1993,8 +2159,7 @@ elif page == "🔍 Findings & Insights":
             clean_data
             .groupby("Season")[
                 "PJMW_MW"
-            ]
-            .mean()
+            ].mean()
         )
 
         highest_season = (
@@ -2004,7 +2169,6 @@ elif page == "🔍 Findings & Insights":
         lowest_season = (
             seasonal_avg.idxmin()
         )
-
 
         # ----------------------------------------------------
         # MONTH NAMES
@@ -2027,7 +2191,6 @@ elif page == "🔍 Findings & Insights":
 
         }
 
-
         # ----------------------------------------------------
         # FINDINGS
         # ----------------------------------------------------
@@ -2039,7 +2202,6 @@ elif page == "🔍 Findings & Insights":
             f"demand is {avg:,.0f} MW."
         )
 
-
         finding(
             "🕐 Hourly Pattern",
 
@@ -2050,7 +2212,6 @@ elif page == "🔍 Findings & Insights":
             f"approximately {lowest_hour_value:,.0f} MW."
         )
 
-
         finding(
             "📅 Weekday vs Weekend",
 
@@ -2059,7 +2220,6 @@ elif page == "🔍 Findings & Insights":
             f"{weekend_avg:,.0f} MW on weekends."
         )
 
-
         finding(
             "📆 Monthly Pattern",
 
@@ -2067,7 +2227,6 @@ elif page == "🔍 Findings & Insights":
             f"highest average monthly demand, while "
             f"{month_names[lowest_month]} has the lowest."
         )
-
 
         finding(
             "📈 Long-Term Pattern",
@@ -2078,7 +2237,6 @@ elif page == "🔍 Findings & Insights":
             f"{lowest_year}."
         )
 
-
         finding(
             "🌦️ Seasonal Pattern",
 
@@ -2086,7 +2244,6 @@ elif page == "🔍 Findings & Insights":
             f"seasonal demand, while {lowest_season} "
             f"has the lowest."
         )
-
 
         finding(
             "🔺 Historical Peak",
@@ -2096,7 +2253,6 @@ elif page == "🔍 Findings & Insights":
             f"{max_row['Datetime']}."
         )
 
-
         finding(
             "🔻 Historical Minimum",
 
@@ -2104,7 +2260,6 @@ elif page == "🔍 Findings & Insights":
             f"{min_row['PJMW_MW']:,.0f} MW at "
             f"{min_row['Datetime']}."
         )
-
 
         # ----------------------------------------------------
         # FORECAST INSIGHTS
@@ -2126,7 +2281,6 @@ elif page == "🔍 Findings & Insights":
                 ]
             )
 
-
             finding(
                 "🔮 Production Forecast",
 
@@ -2135,7 +2289,6 @@ elif page == "🔍 Findings & Insights":
                 f"a 30-day forecast. The average forecast "
                 f"demand is {forecast_avg:,.0f} MW."
             )
-
 
             finding(
                 "🎯 Forecast Peak",
@@ -2146,6 +2299,17 @@ elif page == "🔍 Findings & Insights":
                 f"at {forecast_peak['Datetime']}."
             )
 
+        # ----------------------------------------------------
+        # XGBOOST BENCHMARK
+        # ----------------------------------------------------
+
+        finding(
+            "📊 XGBoost Benchmark",
+
+            "XGBoost achieved MAE of 72.60 MW, "
+            "RMSE of 119.68 MW and MAPE of 1.27% "
+            "on the benchmark validation period."
+        )
 
         # ----------------------------------------------------
         # MODEL
@@ -2159,7 +2323,6 @@ elif page == "🔍 Findings & Insights":
             "from the same hour on the previous day."
         )
 
-
         finding(
             "📌 Model Selection",
 
@@ -2167,7 +2330,6 @@ elif page == "🔍 Findings & Insights":
             "the lowest MAE among classical time-series "
             "models on chronological validation data."
         )
-
 
         # ----------------------------------------------------
         # PROJECT INTERPRETATION
@@ -2186,12 +2348,15 @@ elif page == "🔍 Findings & Insights":
             - A 24-hour seasonal forecasting approach is therefore
               directly aligned with the project's strong daily
               demand pattern.
+            - XGBoost provides an additional machine-learning
+              benchmark for comparison.
+            - The production forecast remains based on the
+              documented Seasonal Naive (24h) model.
             - The forecast should be interpreted as a demand
               planning estimate rather than a guarantee of future
               electricity consumption.
             """
         )
-
 
 # ============================================================
 # DATA EXPLORER
@@ -2224,7 +2389,19 @@ elif page == "🔎 Data Explorer":
             all_models,
 
         "Rolling Validation":
-            rolling_validation
+            rolling_validation,
+
+        "XGBoost Validation":
+            xgb_validation,
+
+        "XGBoost 30-Day Hourly Forecast":
+            xgb_forecast_hourly,
+
+        "XGBoost 30-Day Daily Forecast":
+            xgb_forecast_daily,
+
+        "XGBoost Feature Importance":
+            xgb_feature_importance
     }
 
     choice = st.selectbox(
@@ -2251,7 +2428,6 @@ elif page == "🔎 Data Explorer":
             height=550
         )
 
-
 # ============================================================
 # METHODOLOGY
 # ============================================================
@@ -2262,7 +2438,6 @@ elif page == "📘 Methodology":
         "Project Methodology"
     )
 
-
     st.subheader(
         "1. Problem Definition"
     )
@@ -2271,7 +2446,6 @@ elif page == "📘 Methodology":
         "Forecast hourly electricity consumption "
         "using PJM historical demand data."
     )
-
 
     st.subheader(
         "2. Exploratory Data Analysis"
@@ -2283,7 +2457,6 @@ elif page == "📘 Methodology":
         "demand patterns."
     )
 
-
     st.subheader(
         "3. Model Development"
     )
@@ -2292,7 +2465,6 @@ elif page == "📘 Methodology":
         "Multiple machine-learning and time-series "
         "approaches were evaluated."
     )
-
 
     st.subheader(
         "4. Production Model Selection"
@@ -2304,7 +2476,6 @@ elif page == "📘 Methodology":
         "chronological validation and MAE."
     )
 
-
     st.subheader(
         "5. Production Model"
     )
@@ -2315,19 +2486,27 @@ elif page == "📘 Methodology":
         "hour on the previous day."
     )
 
-
     st.subheader(
-        "6. Forecast Horizon"
+        "6. XGBoost Benchmark"
     )
 
     st.write(
-        "The final artifact contains 720 hourly "
+        "XGBoost is included as a machine-learning "
+        "benchmark. Its validation results are MAE "
+        "72.60 MW, RMSE 119.68 MW and MAPE 1.27%."
+    )
+
+    st.subheader(
+        "7. Forecast Horizon"
+    )
+
+    st.write(
+        "The final production artifact contains 720 hourly "
         "forecasts, covering 30 days."
     )
 
-
     st.subheader(
-        "7. Validation"
+        "8. Validation"
     )
 
     st.write(
@@ -2336,7 +2515,6 @@ elif page == "📘 Methodology":
         "the final year."
     )
 
-
     st.subheader(
         "Project Metadata"
     )
@@ -2344,7 +2522,6 @@ elif page == "📘 Methodology":
     st.json(
         metadata
     )
-
 
 # ============================================================
 # DOWNLOADS
@@ -2364,7 +2541,6 @@ elif page == "⬇️ Downloads":
         unsafe_allow_html=True
     )
 
-
     download_files = {
 
         "30-Day Hourly Forecast":
@@ -2372,6 +2548,18 @@ elif page == "⬇️ Downloads":
 
         "30-Day Daily Forecast":
             "pjm_final_30_day_daily_forecast.csv",
+
+        "XGBoost Validation Predictions":
+            "pjm_xgboost_validation_predictions.csv",
+
+        "XGBoost 30-Day Hourly Forecast":
+            "pjm_xgboost_30_day_hourly_forecast.csv",
+
+        "XGBoost 30-Day Daily Forecast":
+            "pjm_xgboost_30_day_daily_forecast.csv",
+
+        "XGBoost Feature Importance":
+            "pjm_xgboost_feature_importance.csv",
 
         "Clean Hourly Data":
             "pjm_clean_hourly_data.csv",
@@ -2394,7 +2582,6 @@ elif page == "⬇️ Downloads":
         "Final Model Information":
             "pjm_final_time_series_model.json"
     }
-
 
     for title, filename in download_files.items():
 
