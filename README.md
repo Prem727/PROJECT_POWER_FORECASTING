@@ -13,6 +13,37 @@ The project includes exploratory data analysis (EDA), time-series model comparis
 \---
 
 
+## How to Run the Project
+
+### 1. Run Locally
+
+To run the application on your computer:
+
+```bash
+cd C:\Energy_Forecasting
+pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+After running the command, open:
+
+```text
+http://localhost:8501
+```
+
+The local application uses the trained Random Forest model stored in the project folder.
+
+
+### Online Deployment
+
+The project is deployed online using Streamlit Community Cloud.
+
+**Live Application:**  
+https://powerforcasting.streamlit.app/
+
+No local installation is required to use the online application.
+
+
 
 \## 📌 Project Overview
 
